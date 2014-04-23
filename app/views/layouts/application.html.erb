@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SampleApp2</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="assets/html5shiv.js"></script>
+	  <script src="assets/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- glyphicon Bootstrapサイトのアイコンのリンク先-->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<%= yield %>
+
+	<%= debug(params) if Rails.env.development? %>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+</body>
+</html>
